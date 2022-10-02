@@ -10,15 +10,15 @@ const Subscribe = () => {
           update our price list of have promos!
         </p>
       </div>
-      <div className="flex gap-3">
-        <form action="/" className="">
+      <div className="flex gap-6">
+        <form action="/" className="w-full">
           <input
             type="text"
-            className=" w-full rounded-lg px-5 py-5"
+            className=" w-full rounded-lg px-6 py-3"
             placeholder="gregphillips@gmail.com"
           />
         </form>
-        <button className="bg-pink hover:bg-pink text-green font-semibold py-5 px-5 rounded">
+        <button className="bg-pink hover:bg-pink text-green font-semibold rounded-lg w-1/2 text-xl block h-12 px-5 py-3 font-rubik">
           Get notified
         </button>
       </div>
