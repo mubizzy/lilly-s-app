@@ -14,11 +14,11 @@ const Subscribe = () => {
         <form action="/" className="w-full">
           <input
             type="text"
-            className=" w-full rounded-lg px-6 py-3"
+            className=" w-full rounded-md px-6 py-3"
             placeholder="gregphillips@gmail.com"
           />
         </form>
-        <button className="bg-pink hover:bg-pink text-green font-semibold rounded-lg w-1/2 text-xl block h-12 px-5 py-3 font-rubik">
+        <button className="bg-pink hover:bg-pink text-green font-normal rounded-md w-1/2 text- block h-12 px-7 py-3 font-rubik">
           Get notified
         </button>
       </div>
