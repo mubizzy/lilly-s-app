@@ -4,22 +4,22 @@ import logos from "../images/Google Play Badge.svg";
 
 function Footer() {
   return (
-    <footer className="container px-4 py-20 mx-auto">
-      <div class="footer__data">
-        <h3 class="footer__subtitle">Company</h3>
+    <footer className="container px-12 py-20 mx-auto grid grid-cols-4">
+      <div className="text-white">
+        <h3 className="text-xl text-white">Company</h3>
         <ul>
-          <li class="footer__item">
-            <a href="" class="footer__link">
+          <li className="">
+            <a href="#" className="">
               About Us
             </a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
+          <li className="">
+            <a href="#" className="f">
               Careers
             </a>
           </li>
-          <li class="footer__item">
-            <a href="" class="footer__link">
+          <li className="footer__item">
+            <a href="#" className="">
               Contact Us
             </a>
           </li>
@@ -27,7 +27,7 @@ function Footer() {
       </div>
 
       <div class="footer__data">
-        <h3 class="footer__subtitle">Support</h3>
+        <h3 class="text-xl text-white">Support</h3>
         <ul>
           <li class="footer__item">
             <a href="" class="footer__link">
@@ -43,7 +43,7 @@ function Footer() {
       </div>
 
       <div class="footer__data">
-        <h3 class="footer__subtitle">Legal</h3>
+        <h3 class="text-xl text-white">Legal</h3>
         <ul>
           <li class="footer__item">
             <a href="" class="footer__link">
@@ -69,33 +69,7 @@ function Footer() {
       </div>
 
       <div class="footer__data">
-        <h3 class="footer__subtitle">Legal</h3>
-        <ul>
-          <li class="footer__item">
-            <a href="" class="footer__link">
-              Cookies Policy
-            </a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
-              Privacy Policy
-            </a>
-          </li>
-          <li class="footer__item">
-            <a href="" class="footer__link">
-              Terms of Service
-            </a>
-          </li>
-          <li class="footer__item">
-            <a href="" class="footer__link">
-              Dispute resolution
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__data">
-        <h3 class="footer__subtitle">Install App</h3>
+        <h3 class="text-xl text-white">Install App</h3>
         <ul>
           <li class="footer__item">
             <a href="#" class="footer__link">
