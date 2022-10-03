@@ -4,14 +4,16 @@ const Subscribe = () => {
   return (
     <section className="grid grid-cols-2 gap-20 px-16 mb-4">
       <div>
-        <h2>Get notified when we update!</h2>
-        <p>
+        <h2 className="font-bold text-2xl text-pinky mb-4">
+          Get notified when we update!
+        </h2>
+        <p className="text-white font-normal">
           Get notified when we add new items to our specials menu, <br />
           update our price list of have promos!
         </p>
       </div>
       <div className="flex gap-2">
-        <form action="/" className="w-full">
+        <form action="#" className="w-full">
           <input
             type="text"
             className=" w-full rounded-md px-6 py-3"
