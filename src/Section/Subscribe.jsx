@@ -18,7 +18,7 @@ const Subscribe = () => {
             placeholder="gregphillips@gmail.com"
           />
         </form>
-        <button className="bg-pink hover:bg-pink text-green font-normal rounded-md w-1/2 text- block h-12 px-7 py-3 font-rubik">
+        <button className="bg-pink hover:bg-pink text-green font-medium rounded-md w-1/2 text- block h-12 px-7 py-3 font-rubik">
           Get notified
         </button>
       </div>
