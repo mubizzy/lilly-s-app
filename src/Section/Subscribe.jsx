@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <section className="grid grid-cols-2 gap-20 px-16 mb-4">
+    <section className="grid grid-cols-2 gap-20 px-20 mb-4">
       <div>
         <h2 className="font-bold text-2xl text-pinky mb-4">
           Get notified when we update!
@@ -12,7 +12,7 @@ const Subscribe = () => {
           update our price list of have promos!
         </p>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 py-7">
         <form action="#" className="w-full">
           <input
             type="text"
