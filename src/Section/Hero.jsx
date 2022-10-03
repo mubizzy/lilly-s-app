@@ -2,7 +2,7 @@ import React from "react";
 import image from "../images/img1.png";
 const Hero = () => {
   return (
-    <div className="container px-4 py-16 mx-auto grid md:grid-cols-2 gap-32">
+    <div className="container px-4 py-20 mx-auto grid md:grid-cols-2 gap-32">
       <div className="py-16">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium  text-primary leading-loose">
           Order
