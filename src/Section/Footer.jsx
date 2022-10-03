@@ -98,22 +98,13 @@ function Footer() {
         <h3 class="footer__subtitle">Install App</h3>
         <ul>
           <li class="footer__item">
-            <a href="" class="footer__link">
+            <a href="#" class="footer__link">
               <img src={logos} alt="Google badge" />
             </a>
           </li>
           <li class="footer__item">
-            <img src={logo} alt="App badge" />
-            <img src={logo} alt="App badge" />
-          </li>
-          <li class="footer__item">
-            <a href="" class="footer__link">
-              Terms of Service
-            </a>
-          </li>
-          <li class="footer__item">
-            <a href="" class="footer__link">
-              Dispute resolution
+            <a href="#">
+              <img src={logo} alt="App badge" />
             </a>
           </li>
         </ul>
