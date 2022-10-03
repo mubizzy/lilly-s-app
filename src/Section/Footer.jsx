@@ -26,7 +26,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div class="footer__data">
+      <div class="text-white">
         <h3 class="text-xl text-white">Support</h3>
         <ul>
           <li class="footer__item">
@@ -42,11 +42,11 @@ function Footer() {
         </ul>
       </div>
 
-      <div class="footer__data">
+      <div class="text-white grid ">
         <h3 class="text-xl text-white">Legal</h3>
         <ul>
           <li class="footer__item">
-            <a href="" class="footer__link">
+            <a href="#" className="">
               Cookies Policy
             </a>
           </li>
@@ -68,7 +68,7 @@ function Footer() {
         </ul>
       </div>
 
-      <div class="footer__data">
+      <div class="text-white">
         <h3 class="text-xl text-white">Install App</h3>
         <ul>
           <li class="footer__item">
