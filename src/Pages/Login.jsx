@@ -16,7 +16,7 @@ function Login() {
     <section className=" ">
       <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto ">
         <div className="md:[67%] lg:[20%] mb-12 md:mb-6">
-          <img src={fine} alt="" className="h-100 w-30" />
+          <img src={fine} alt="" className="h-30 w-30" />
         </div>
         <div className="w-full md[67%] lg:w-[40%] ">
           <form>
