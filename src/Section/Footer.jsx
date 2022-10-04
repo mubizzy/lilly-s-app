@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../images/App Store Badge.svg";
 import logos from "../images/Google Play Badge.svg";
+import twitter from "../images/twitter.svg";
+import insta from "../images/instagram.svg";
+import youtube from "../images/youtube.svg";
 
 function Footer() {
   return (
@@ -85,17 +88,17 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="text-white">
+      <div className="flex justify-between text-white container px-12 py-2 mx-auto">
         <p className="">&#169; 2021 LILIES, All rights reserved.</p>
-        <div className="">
+        <div className="flex gap-3">
           <a href="#" className="footer__terms-link">
-            <img src="" alt="" />
+            <img src={insta} alt="" />
           </a>
           <a href="#" className="footer__terms-link">
-            <img src="" alt="" />
+            <img src={twitter} alt="" />
           </a>
           <a href="#" className="footer__terms-link">
-            <img src="" alt="" />
+            <img src={youtube} alt="" />
           </a>
         </div>
       </div>
