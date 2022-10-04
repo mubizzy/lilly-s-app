@@ -60,12 +60,12 @@ function Footer() {
               </a>
             </li>
             <li className="mb-3">
-              <a href="" class="footer__link">
+              <a href="#" className="footer__link">
                 Terms of Service
               </a>
             </li>
             <li className="">
-              <a href="" className="">
+              <a href="#" className="">
                 Dispute resolution
               </a>
             </li>
@@ -90,15 +90,15 @@ function Footer() {
       </div>
       <div className="flex justify-between text-white container px-12 py-2 mx-auto">
         <p className="">&#169; 2021 LILIES, All rights reserved.</p>
-        <div className="flex gap-3">
-          <a href="#" className="footer__terms-link">
-            <img src={insta} alt="" />
+        <div className="flex gap-2">
+          <a href="#" className="">
+            <img src={insta} alt="insta" />
           </a>
-          <a href="#" className="footer__terms-link">
-            <img src={twitter} alt="" />
+          <a href="#" className="">
+            <img src={twitter} alt="twitter" />
           </a>
-          <a href="#" className="footer__terms-link">
-            <img src={youtube} alt="" />
+          <a href="#" className="">
+            <img src={youtube} alt="youtube" />
           </a>
         </div>
       </div>
