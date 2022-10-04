@@ -4,11 +4,11 @@ import logos from "../images/Google Play Badge.svg";
 
 function Footer() {
   return (
-    <footer className="container px-12 py-20 mx-auto bg-black  w-full grid lg:grid-cols-4 ">
+    <footer className="container px-12 py-20 mx-auto bg-black grid lg:grid-cols-4 ">
       <div className="text-white text-sm font-normal ">
-        <h3 className="text-xl text-white font-medium">Company</h3>
+        <h3 className="text-xl text-white font-medium mb-3">Company</h3>
         <ul>
-          <li className="text-sm">
+          <li className="">
             <a href="#" className="">
               About Us
             </a>
@@ -27,7 +27,7 @@ function Footer() {
       </div>
 
       <div class="text-white">
-        <h3 class="text-xl text-white">Support</h3>
+        <h3 class="text-xl text-white mb-3">Support</h3>
         <ul>
           <li class="footer__item">
             <a href="" class="footer__link">
@@ -42,8 +42,8 @@ function Footer() {
         </ul>
       </div>
 
-      <div class="text-white grid ">
-        <h3 class="text-xl text-white">Legal</h3>
+      <div className="text-white grid ">
+        <h3 class="text-xl text-white mb-3">Legal</h3>
         <ul>
           <li class="footer__item">
             <a href="#" className="">
@@ -68,8 +68,8 @@ function Footer() {
         </ul>
       </div>
 
-      <div class="text-white">
-        <h3 class="text-xl text-white">Install App</h3>
+      <div classNameS="text-white ">
+        <h3 className="text-xl text-white mb-3">Install App</h3>
         <ul>
           <li class="footer__item">
             <a href="#" class="footer__link">
