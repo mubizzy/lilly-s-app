@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import fine from "../images/fine.png";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,7 +17,7 @@ function Login() {
   return (
     <section className=" ">
       <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto  ">
-        <div className="md:[67%] lg:[20%] mb-12 md:mb-6">
+        <div className="md:[67%] lg:[80%] mb-12 md:mb-6">
           <img src={fine} alt="" className="" />
         </div>
         <div className="w-full md[67%] lg:w-[40%] ">
@@ -38,6 +39,8 @@ function Login() {
                 placeholder="Password"
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
               />
+
+              {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
             </div>
           </form>
         </div>
