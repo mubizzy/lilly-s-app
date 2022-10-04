@@ -6,15 +6,15 @@ function Footer() {
   return (
     <footer className="container px-12 py-20 mx-auto bg-black grid lg:grid-cols-4 ">
       <div className="text-white text-sm font-normal ">
-        <h3 className="text-xl text-white font-medium mb-3">Company</h3>
+        <h3 className="text-xl text-white font-medium mb-4">Company</h3>
         <ul>
-          <li className="">
+          <li className="mb-3">
             <a href="#" className="">
               About Us
             </a>
           </li>
-          <li className="">
-            <a href="#" className="f">
+          <li className="mb-3">
+            <a href="#" className="">
               Careers
             </a>
           </li>
@@ -27,15 +27,15 @@ function Footer() {
       </div>
 
       <div className="text-white">
-        <h3 className="text-xl text-white mb-3">Support</h3>
+        <h3 className="text-xl text-white mb-4">Support</h3>
         <ul>
-          <li className="footer__item">
-            <a href="" className="footer__link">
+          <li className="mb-3">
+            <a href="#" className="">
               Help Center
             </a>
           </li>
-          <li className="footer__item">
-            <a href="#" className="footer__link">
+          <li className="mb-3">
+            <a href="#" className="">
               Support Center
             </a>
           </li>
@@ -43,40 +43,40 @@ function Footer() {
       </div>
 
       <div className="text-white grid ">
-        <h3 className="text-xl text-white mb-3">Legal</h3>
+        <h3 className="text-xl text-white mb-4">Legal</h3>
         <ul>
-          <li className="footer__item">
+          <li className="mb-3">
             <a href="#" className="">
               Cookies Policy
             </a>
           </li>
-          <li className="footer__item">
-            <a href="#" className="footer__link">
+          <li className="mb-3">
+            <a href="#" className="">
               Privacy Policy
             </a>
           </li>
-          <li className="footer__item">
+          <li className="mb-3">
             <a href="" class="footer__link">
               Terms of Service
             </a>
           </li>
-          <li class="footer__item">
-            <a href="" class="footer__link">
+          <li className="">
+            <a href="" className="">
               Dispute resolution
             </a>
           </li>
         </ul>
       </div>
 
-      <div classNameS="text-white ">
-        <h3 className="text-xl text-white mb-3">Install App</h3>
+      <div className="text-white ">
+        <h3 className="text-xl text-white mb-4">Install App</h3>
         <ul>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
+          <li className="mb-3">
+            <a href="#" className="">
               <img src={logos} alt="Google badge" />
             </a>
           </li>
-          <li class="footer__item">
+          <li className="">
             <a href="#">
               <img src={logo} alt="App badge" />
             </a>
