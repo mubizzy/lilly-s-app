@@ -4,7 +4,7 @@ import logos from "../images/Google Play Badge.svg";
 
 function Footer() {
   return (
-    <footer className="container px-12 py-20 mx-auto bg-black grid lg:grid-cols-4 ">
+    <footer className="container px-12 py-20 mx-auto bg-black  w-full grid lg:grid-cols-4 ">
       <div className="text-white text-sm font-normal ">
         <h3 className="text-xl text-white font-medium">Company</h3>
         <ul>
