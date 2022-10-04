@@ -26,16 +26,16 @@ function Footer() {
         </ul>
       </div>
 
-      <div class="text-white">
-        <h3 class="text-xl text-white mb-3">Support</h3>
+      <div className="text-white">
+        <h3 className="text-xl text-white mb-3">Support</h3>
         <ul>
-          <li class="footer__item">
-            <a href="" class="footer__link">
+          <li className="footer__item">
+            <a href="" className="footer__link">
               Help Center
             </a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
+          <li className="footer__item">
+            <a href="#" className="footer__link">
               Support Center
             </a>
           </li>
@@ -43,19 +43,19 @@ function Footer() {
       </div>
 
       <div className="text-white grid ">
-        <h3 class="text-xl text-white mb-3">Legal</h3>
+        <h3 className="text-xl text-white mb-3">Legal</h3>
         <ul>
-          <li class="footer__item">
+          <li className="footer__item">
             <a href="#" className="">
               Cookies Policy
             </a>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">
+          <li className="footer__item">
+            <a href="#" className="footer__link">
               Privacy Policy
             </a>
           </li>
-          <li class="footer__item">
+          <li className="footer__item">
             <a href="" class="footer__link">
               Terms of Service
             </a>
