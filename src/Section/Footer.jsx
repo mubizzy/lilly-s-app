@@ -85,14 +85,17 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="">
+      <div className="text-white">
         <p className="">&#169; 2021 LILIES, All rights reserved.</p>
-        <div className="footer__terms">
+        <div className="">
           <a href="#" className="footer__terms-link">
-            Terms & Agreements
+            <img src="" alt="" />
           </a>
           <a href="#" className="footer__terms-link">
-            Privacy Policy
+            <img src="" alt="" />
+          </a>
+          <a href="#" className="footer__terms-link">
+            <img src="" alt="" />
           </a>
         </div>
       </div>
