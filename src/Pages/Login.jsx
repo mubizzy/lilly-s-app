@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { Link, useNavigate } from "react-router-dom";
 import fine from "../images/fine.png";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -15,12 +16,15 @@ function Login() {
     }));
   };
   return (
-    <section className="text-white ">
-      <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto ">
+    <section className=" ">
+      <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto  ">
         <div className="md:[67%] lg:[50%] mb-12 md:mb-6">
           <img src={fine} alt="" className="" />
         </div>
-        <div className="w-full md[67%] lg:w-[40%] ">
+        <div
+          className="w-ful md[67%] lg:w-[40%] bg-white
+        "
+        >
           <h1 className="text-3xl text-center mt-6 font-bold">welcome back!</h1>
           <form>
             <input
@@ -43,15 +47,26 @@ function Login() {
 
               {showPassword ? (
                 <AiFillEyeInvisible
-                  className="absolute right-3 top-3 text-xl cursor-pointer"
+                  className="absolute right-3 top-3 text-xl text-black cursor-pointer"
                   onClick={() => setShowPassword((prevState) => !prevState)}
                 />
               ) : (
                 <AiFillEye
-                  className="absolute right-3 top-3 text-xl cursor-pointer"
+                  className="absolute right-3 top-3 text-xl text-black cursor-pointer"
                   onClick={() => setShowPassword((prevState) => !prevState)}
                 />
               )}
+            </div>
+            <div>
+              <p>
+                <Link
+                  to="/sign-up"
+                  className="text-green hover:text-blue-800 transition duration-200 ease-in-out"
+                >
+                  Create an account
+                </Link>
+              </p>
+              <p>Forgot Password</p>
             </div>
           </form>
         </div>
