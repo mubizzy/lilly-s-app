@@ -17,23 +17,22 @@ function Login() {
   };
   return (
     <section className=" ">
-      <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto  ">
-        <div className="md:[67%] lg:[50%] mb-12 md:mb-6">
-          <img src={fine} alt="" className="" />
+      <div className="flex justify-center  item-center px-6 py-12 flex-wrap   ">
+        <div className="md:[67%]   md:mb-6 w-[764px] h-auto">
+          <img src={fine} alt="image" className="h-27" />
         </div>
         <div
-          className="w-full md[67%] lg:w-[40%] gap-2  
+          className="w-full md[67%] lg:w-[40%]  flex-wrap 
         "
         >
-          <div className="">
-            {" "}
-            <h1 className="text-3xl text-center  font-bold py-20 ">
+          <div className="h-screen bg-white py-20 ">
+            <h1 className="text-3xl text-center  font-semi-bold py-20  ">
               welcome back!
             </h1>
-            <form className="px-12">
+            <form className="px-12 ">
               <input
                 type="text"
-                className="mb-6 px-4 py-2 text-xl text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
+                className="mb-8 px-4 py-2 text-xl text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
                 id="email"
                 value={email}
                 onChange={onChange}
@@ -61,11 +60,18 @@ function Login() {
                   />
                 )}
               </div>
+
+              <button
+                className="w-full bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800 mb-4"
+                type="submit"
+              >
+                LOGIN
+              </button>
               <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg px-2">
                 <p>
                   <Link
                     to="/sign-up"
-                    className="text-green hover:text-blue-800 transition duration-200 ease-in-out"
+                    className="text-green hover:text-blue-800 transition duration-200 ease-in-out "
                   >
                     Create an account
                   </Link>
