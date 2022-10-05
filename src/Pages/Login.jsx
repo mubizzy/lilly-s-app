@@ -27,7 +27,7 @@ function Login() {
         >
           <div className=" py-8 ">
             <h1 className="text-3xl text-center  font-semi-bold py-6  ">
-              welcome back!
+              Welcome back!
             </h1>
             <form className="px-12 ">
               <input
