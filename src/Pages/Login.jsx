@@ -47,7 +47,10 @@ function Login() {
                   onClick={() => setShowPassword((prevState) => !prevState)}
                 />
               ) : (
-                <AiFillEye />
+                <AiFillEye
+                  className="absolute right-3 top-3 text-xl cursor-pointer"
+                  onClick={() => setShowPassword((prevState) => !prevState)}
+                />
               )}
             </div>
           </form>
