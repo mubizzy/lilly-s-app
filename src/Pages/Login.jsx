@@ -17,22 +17,22 @@ function Login() {
   };
   return (
     <section className=" ">
-      <div className="flex justify-center  item-center px-6 py-12 flex-wrap   ">
-        <div className="md:[67%]   md:mb-6 w-[764px] h-auto">
-          <img src={fine} alt="image" className="h-27" />
+      <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-8/12">
+        <div className=" w-1/2">
+          <img src={fine} alt="image" className="" />
         </div>
         <div
-          className="w-full md[67%] lg:w-[40%]  flex-wrap 
+          className="w-1/2   flex-wrap bg-white 
         "
         >
-          <div className="h-screen bg-white py-20 ">
-            <h1 className="text-3xl text-center  font-semi-bold py-20  ">
+          <div className=" py-8 ">
+            <h1 className="text-3xl text-center  font-semi-bold py-6  ">
               welcome back!
             </h1>
             <form className="px-12 ">
               <input
                 type="text"
-                className="mb-8 px-4 py-2 text-xl text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
+                className="mb-8 px-4 py-2 text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
                 id="email"
                 value={email}
                 onChange={onChange}
@@ -45,7 +45,7 @@ function Login() {
                   value={password}
                   onChange={onChange}
                   placeholder="Your password"
-                  className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
+                  className="w-full px-4 py-2 text-sm text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
                 />
 
                 {showPassword ? (
@@ -62,13 +62,13 @@ function Login() {
               </div>
 
               <button
-                className="w-full bg-blue-600 text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-blue-800 mb-4"
+                className="w-full bg-green text-white px-7 py-3 text-sm font-medium uppercase rounded shadow-md hover:bg-blue-700 transition duration-150 ease-in-out hover:shadow-lg active:bg-green-800 mb-4"
                 type="submit"
               >
                 LOGIN
               </button>
               <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg px-2">
-                <p>
+                <p className="text-sm">
                   <Link
                     to="/sign-up"
                     className="text-green hover:text-blue-800 transition duration-200 ease-in-out "
@@ -76,7 +76,7 @@ function Login() {
                     Create an account
                   </Link>
                 </p>
-                <p>Forgot Password</p>
+                <p className="text-sm">Forgot Password</p>
               </div>
             </form>
           </div>
