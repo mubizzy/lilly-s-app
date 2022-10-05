@@ -22,53 +22,58 @@ function Login() {
           <img src={fine} alt="" className="" />
         </div>
         <div
-          className="w-ful md[67%] lg:w-[40%] bg-white
+          className="w-full md[67%] lg:w-[40%] gap-2  
         "
         >
-          <h1 className="text-3xl text-center mt-6 font-bold">welcome back!</h1>
-          <form>
-            <input
-              type="text"
-              className="mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300  transition ease-in-out"
-              id="email"
-              value={email}
-              onChange={onChange}
-              placeholder="Email address"
-            />
-            <div className="relative mb-6">
+          <div className="">
+            {" "}
+            <h1 className="text-3xl text-center  font-bold py-20 ">
+              welcome back!
+            </h1>
+            <form className="px-12">
               <input
-                type={showPassword ? "text" : "password"}
-                id="password"
-                value={password}
+                type="text"
+                className="mb-6 px-4 py-2 text-xl text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
+                id="email"
+                value={email}
                 onChange={onChange}
-                placeholder="Password"
-                className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
+                placeholder="Email address"
               />
+              <div className="relative mb-6">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  value={password}
+                  onChange={onChange}
+                  placeholder="Your password"
+                  className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
+                />
 
-              {showPassword ? (
-                <AiFillEyeInvisible
-                  className="absolute right-3 top-3 text-xl text-black cursor-pointer"
-                  onClick={() => setShowPassword((prevState) => !prevState)}
-                />
-              ) : (
-                <AiFillEye
-                  className="absolute right-3 top-3 text-xl text-black cursor-pointer"
-                  onClick={() => setShowPassword((prevState) => !prevState)}
-                />
-              )}
-            </div>
-            <div>
-              <p>
-                <Link
-                  to="/sign-up"
-                  className="text-green hover:text-blue-800 transition duration-200 ease-in-out"
-                >
-                  Create an account
-                </Link>
-              </p>
-              <p>Forgot Password</p>
-            </div>
-          </form>
+                {showPassword ? (
+                  <AiFillEyeInvisible
+                    className="absolute right-3 top-3 text-xl text-black cursor-pointer"
+                    onClick={() => setShowPassword((prevState) => !prevState)}
+                  />
+                ) : (
+                  <AiFillEye
+                    className="absolute right-3 top-3 text-xl text-black cursor-pointer"
+                    onClick={() => setShowPassword((prevState) => !prevState)}
+                  />
+                )}
+              </div>
+              <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg px-2">
+                <p>
+                  <Link
+                    to="/sign-up"
+                    className="text-green hover:text-blue-800 transition duration-200 ease-in-out"
+                  >
+                    Create an account
+                  </Link>
+                </p>
+                <p>Forgot Password</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
