@@ -15,12 +15,13 @@ function Login() {
     }));
   };
   return (
-    <section className=" ">
-      <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto  ">
-        <div className="md:[67%] lg:[80%] mb-12 md:mb-6">
+    <section className="text-white ">
+      <div className="flex justify-center  item-center px-6 py-12 flex-wrap mx-auto ">
+        <div className="md:[67%] lg:[50%] mb-12 md:mb-6">
           <img src={fine} alt="" className="" />
         </div>
         <div className="w-full md[67%] lg:w-[40%] ">
+          <h1 className="text-3xl text-center mt-6 font-bold">welcome back!</h1>
           <form>
             <input
               type="text"
@@ -40,7 +41,14 @@ function Login() {
                 className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out"
               />
 
-              {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
+              {showPassword ? (
+                <AiFillEyeInvisible
+                  className="absolute right-3 top-3 text-xl cursor-pointer"
+                  onClick={() => setShowPassword((prevState) => !prevState)}
+                />
+              ) : (
+                <AiFillEye />
+              )}
             </div>
           </form>
         </div>
