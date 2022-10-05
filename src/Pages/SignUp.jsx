@@ -1,21 +1,31 @@
 import React from "react";
-
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { Link, useNavigate } from "react-router-dom";
+import fine from "../images/fine.png";
 function SignUp() {
   return (
     <section className=" ">
-      <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-8/12 md:flex-column">
+      <div className="flex justify-center item-center px-6 py-12 flex-wrap container mx-auto w-8/12 ">
         <div className=" w-1/2">
           <img src={fine} alt="image" className="" />
         </div>
         <div
-          className="w-1/2   flex-wrap bg-white 
+          className="w-1/2 flex-wrap bg-white 
         "
         >
           <div className=" py-8 ">
             <h1 className="text-3xl text-center  font-semi-bold py-6  ">
-              welcome back!
+              welcome to Lillies
             </h1>
             <form className="px-12 ">
+              <input
+                type="text"
+                className="mb-8 px-4 py-2 text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
+                id="email"
+                value={email}
+                onChange={onChange}
+                placeholder="Your First Name"
+              />
               <input
                 type="text"
                 className="mb-8 px-4 py-2 text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
