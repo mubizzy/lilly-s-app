@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import fine from "../images/fine.png";
+import OAuth from "../Section/OAuth";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -17,7 +18,7 @@ function Login() {
   };
   return (
     <section className=" ">
-      <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-8/12 ">
+      <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-10/12 ">
         <div className=" w-1/2">
           <img src={fine} alt="image" className="" />
         </div>
@@ -25,11 +26,11 @@ function Login() {
           className="w-1/2   flex-wrap bg-white 
         "
         >
-          <div className=" py-8 ">
+          <div className=" py-4 ">
             <h1 className="text-3xl text-center  font-semi-bold py-6  ">
               Welcome back!
             </h1>
-            <form className="px-12 ">
+            <form className="px-10 ">
               <input
                 type="text"
                 className="mb-8 px-4 py-2 text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
@@ -81,6 +82,7 @@ function Login() {
               <div className="flex items-center  my-4 before:border-t before:flex-1 before:border-gray-300 after:border-t after:flex-1 after:border-gray-300">
                 <p className="text-center font-semibold mx-4">OR</p>
               </div>
+              <OAuth />
             </form>
           </div>
         </div>
