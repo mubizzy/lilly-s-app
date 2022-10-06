@@ -18,7 +18,7 @@ function SignUp() {
   };
   return (
     <section className=" ">
-      <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-8/12 ">
+      <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-10/12 ">
         <div className=" w-1/2 bg-red">
           <img src={fine} alt="image" className="" />
         </div>
@@ -26,14 +26,14 @@ function SignUp() {
           className="w-1/2   flex-wrap bg-white 
         "
         >
-          <div className=" py-8 ">
-            <h1 className="text-3xl text-center  font-semi-bold py-6  ">
+          <div className=" py-6 ">
+            <h1 className="text-3xl text-center  font-semi-bold py-12  ">
               Welcome to Lilies!
             </h1>
             <form className="px-12 ">
               <input
                 type="text"
-                className="mb-8 px-4 py-2 text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
+                className="mb-6 px-4 py-2  text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
                 id="email"
                 value={email}
                 onChange={onChange}
