@@ -18,7 +18,7 @@ function SignUp() {
   return (
     <section className=" ">
       <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-8/12 ">
-        <div className=" w-1/2">
+        <div className=" w-1/2 bg-red">
           <img src={fine} alt="image" className="" />
         </div>
         <div
