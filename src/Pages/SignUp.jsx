@@ -6,10 +6,11 @@ import OAuth from "../Section/OAuth";
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
     password: "",
   });
-  const { email, password } = formData;
+  const { name, email, password } = formData;
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -34,8 +35,8 @@ function SignUp() {
               <input
                 type="text"
                 className="mb-6 px-4 py-2  text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
-                id="email"
-                value={email}
+                id="name"
+                value={name}
                 onChange={onChange}
                 placeholder="Your First Name"
               />
