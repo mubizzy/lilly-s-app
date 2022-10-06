@@ -26,11 +26,11 @@ function Login() {
           className="w-1/2   flex-wrap bg-white 
         "
         >
-          <div className=" py-4 ">
-            <h1 className="text-3xl text-center  font-semi-bold py-6  ">
+          <div className=" py-6 ">
+            <h1 className="text-3xl text-center  font-semi-bold py-12  ">
               Welcome back!
             </h1>
-            <form className="px-10 ">
+            <form className="px-12 ">
               <input
                 type="text"
                 className="mb-8 px-4 py-2 text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
