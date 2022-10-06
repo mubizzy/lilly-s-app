@@ -80,7 +80,7 @@ function SignUp() {
                   Already have an account.
                   <Link
                     to="/login"
-                    className="text-green hover:text-blue-800 transition duration-200 ease-in-out font-normal"
+                    className="text-green hover:text-green-800 transition duration-200 ease-in-out font-normal"
                   >
                     LOGIN
                   </Link>
