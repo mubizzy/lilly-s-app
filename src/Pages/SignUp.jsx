@@ -34,8 +34,15 @@ function SignUp() {
         email,
         password
       );
+      updateProfile(auth.currentUser, {
+        displayName: name,
+      });
+
       const user = userCredential.user;
-      console.log(user);
+      const formDataCopy = { ...formData };
+      delete formDataCopy.password;
+      formDataCopy.timestamp = serverTimestamp();
+      await setDoc(doc(db, "users", user.uid), formDataCopy);
     } catch (error) {
       console.log(error);
     }
