@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import fine from "../images/fine.png";
 import OAuth from "../Section/OAuth";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { db } from "../firebase";
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -30,8 +31,10 @@ function SignUp() {
         password
       );
       const user = userCredential.user;
-    console.log(user)}
-
+      console.log(user);
+    } catch (error) {
+      console.log(error);
+    }
   }
   return (
     <section className=" ">
