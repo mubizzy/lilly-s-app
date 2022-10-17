@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import fine from "../images/fine.png";
 import OAuth from "../Section/OAuth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -17,6 +18,21 @@ function SignUp() {
       [e.target.id]: e.target.value,
     }));
   };
+
+  async function onSubmit(e) {
+    e.preventDefault();
+
+    try {
+      const auth = getAuth();
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredential.user;
+    console.log(user)}
+
+  }
   return (
     <section className=" ">
       <div className="flex justify-center item-center px-6 py-12 flex-wrap  container mx-auto w-10/12 ">
@@ -24,14 +40,14 @@ function SignUp() {
           <img src={fine} alt="image" className="" />
         </div>
         <div
-          className="w-1/2   flex-wrap bg-white 
+          className="w-1/2 flex-wrap bg-white 
         "
         >
           <div className=" py-6 ">
             <h1 className="text-3xl text-center  font-semi-bold py-12  ">
               Welcome to Lilies!
             </h1>
-            <form className="px-12 ">
+            <form onSubmit={onSubmit} className="px-12 ">
               <input
                 type="text"
                 className="mb-6 px-4 py-2  text-sm text-gray-700 bg-white border-gray-300  transition ease-in-out w-full"
