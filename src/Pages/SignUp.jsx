@@ -3,7 +3,11 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import fine from "../images/fine.png";
 import OAuth from "../Section/OAuth";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
 import { db } from "../firebase";
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
