@@ -9,6 +9,8 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { db } from "../firebase";
+import { doc, serverTimestamp, setDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -17,6 +19,7 @@ function SignUp() {
     password: "",
   });
   const { name, email, password } = formData;
+  const navigate = useNavigate();
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -39,12 +42,15 @@ function SignUp() {
       });
 
       const user = userCredential.user;
+      console.log(user);
       const formDataCopy = { ...formData };
       delete formDataCopy.password;
       formDataCopy.timestamp = serverTimestamp();
+
       await setDoc(doc(db, "users", user.uid), formDataCopy);
+      navigate("/");
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   }
   return (
