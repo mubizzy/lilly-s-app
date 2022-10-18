@@ -1,7 +1,19 @@
 import React from "react";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { toast } from "react-toastify";
 import { FcGoogle } from "react-icons/fc";
 const OAuth = () => {
-  function onGoogleClick() {}
+  async function onGoogleClick() {
+    try {
+      const auth = getAuth();
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      console.log(user);
+    } catch (error) {
+      toast.error("Could not authorize with Google");
+    }
+  }
   return (
     <button
       type="button"
