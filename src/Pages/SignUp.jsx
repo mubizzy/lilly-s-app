@@ -49,7 +49,7 @@ function SignUp() {
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
-      navigate("/");
+      // navigate("/");
     } catch (error) {
       toast.error("Something went wrong with the registration");
     }
