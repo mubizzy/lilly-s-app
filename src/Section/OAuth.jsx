@@ -1,7 +1,9 @@
 import React from "react";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 import { FcGoogle } from "react-icons/fc";
+import { db } from "../firebase";
 const OAuth = () => {
   async function onGoogleClick() {
     try {
