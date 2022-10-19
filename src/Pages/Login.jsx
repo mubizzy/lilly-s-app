@@ -17,6 +17,8 @@ function Login() {
       [e.target.id]: e.target.value,
     }));
   };
+
+  // validate your SignIn
   async function onSubmit(e) {
     e.preventDefault();
     try {
@@ -33,6 +35,7 @@ function Login() {
       toast.error("Bad user credentials");
     }
   }
+
   return (
     <section className=" ">
       <div className="flex flex-col justify-center item-center lg:px-6 py-12 flex-wrap container mx-auto md: md:w-6/12 lg:w-10/12 lg:flex-row sm:4/12 ">
