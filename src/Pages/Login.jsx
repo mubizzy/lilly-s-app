@@ -3,6 +3,7 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import fine from "../images/fine.png";
 import OAuth from "../Section/OAuth";
+import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -16,6 +17,22 @@ function Login() {
       [e.target.id]: e.target.value,
     }));
   };
+  async function onSubmit(e) {
+    e.preventDefault();
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      if (userCredential.user) {
+        navigate("/");
+      }
+    } catch (error) {
+      toast.error("Bad user credentials");
+    }
+  }
   return (
     <section className=" ">
       <div className="flex flex-col justify-center item-center lg:px-6 py-12 flex-wrap container mx-auto md: md:w-6/12 lg:w-10/12 lg:flex-row sm:4/12 ">
