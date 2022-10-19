@@ -6,6 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import { db } from "../firebase";
 import { useNavigate } from "react-router-dom";
 const OAuth = () => {
+  const navigate = useNavigate();
   async function onGoogleClick() {
     try {
       const auth = getAuth();
